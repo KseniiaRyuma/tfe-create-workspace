@@ -12,7 +12,7 @@
 module "workspace-1" {
   source              = "../../modules/tfe"
   organization        = var.tfc_org
-  workspace_name      = "hashicat-aws"
+  workspace_name      = "hashicat-aws-auto"
   tf_version          = "0.12.28"
   # VCS Section - if you don't want VCS then comment out section below.
   # vcs_repo  = [
@@ -33,7 +33,7 @@ module "workspace-2" {
   # VCS Section
   vcs_repo = [
     {
-      vcs_repo_identifier = "phanclan/gcp-compute-instance"
+      vcs_repo_identifier = "KseniiaRyuma/gcp-compute-instance"
       working_directory   = ""
       workspace_branch    = "" # default: master
       oauth_token_id      = var.oauth_token_id
@@ -49,7 +49,7 @@ module "workspace-3" {
   # VCS Section
   vcs_repo = [
     {
-      vcs_repo_identifier = "phanclan/aws-ec2-instance"
+      vcs_repo_identifier = "KseniiaRyuma/aws-ec2-instance"
       working_directory   = ""
       workspace_branch    = "dev" # default: master
       oauth_token_id      = var.oauth_token_id
@@ -66,7 +66,7 @@ module "workspace-4" {
   # VCS Section - if you don't want VCS then comment out section below.
   vcs_repo  = [
     {
-      vcs_repo_identifier = "phanclan/aws-ec2-instance"
+      vcs_repo_identifier = "KseniiaRyuma/aws-ec2-instance"
       working_directory   = ""
       workspace_branch    = "prod" # default: master
       oauth_token_id      = var.oauth_token_id
@@ -91,6 +91,6 @@ output "workspace-4_ids" {
 }
 
 variable "tfc_org" {
-  default = "pphan"
+  default = "my_organization"
 }
 variable "oauth_token_id" {}
