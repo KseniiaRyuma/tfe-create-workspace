@@ -12,7 +12,7 @@
 module "workspace-1" {
   source              = "../../modules/tfe"
   organization        = var.tfc_org
-  workspace_name      = "hashicat-aws-auto"
+  workspace_name      = "hashicat-aws"
   tf_version          = "0.12.28"
   # VCS Section - if you don't want VCS then comment out section below.
   # vcs_repo  = [
