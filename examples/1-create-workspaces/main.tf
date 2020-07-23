@@ -17,7 +17,7 @@ module "workspace-1" {
   # VCS Section - if you don't want VCS then comment out section below.
   # vcs_repo  = [
   #   {
-  #     vcs_repo_identifier = "phanclan/hashicat-aws"
+  #     vcs_repo_identifier = "KseniiaRyuma/hashicat-aws"
   #     working_directory   = ""
   #     workspace_branch    = "" # default: master
   #     oauth_token_id      = var.oauth_token_id
